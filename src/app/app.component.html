@@ -1,0 +1,18 @@
+<div class="dropdown">
+  <button class="dropbtn" (click)="show()">Dropdown<img src="../assets/drop-down-arrow.svg" alt="" /></button>
+  <div class="dropdown-menu" #dropDownMenu id="dropdown-menu">
+    <label class="container">
+      <div class="flex"><a (click)="clearAll()">Clear All</a> <a (click)="selectAll()">Select All</a></div>
+    </label>
+    <label class="container">
+      <input type="checkbox" checked="checked" /> Select 1 <span class="checkmark"></span>
+    </label>
+    <hr />
+    <label class="container"> <input type="checkbox" /> Select 2 <span class="checkmark"></span> </label>
+    <hr />
+    <label class="container"> <input type="checkbox" /> Select 3 <span class="checkmark"></span> </label>
+    <hr />
+  </div>
+</div>
+
+<router-outlet></router-outlet>
